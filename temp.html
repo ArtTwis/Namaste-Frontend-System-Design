@@ -1,0 +1,12 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.8/purify.min.js"></script>
+
+<div>
+    Welcome, <span id="username"></span>!
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const sanitizedName = name.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    document.getElementById('username').textContent = sanitizedName;        
+</script>

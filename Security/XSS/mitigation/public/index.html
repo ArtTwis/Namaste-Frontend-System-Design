@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitigation</title>
+
+    <script src="http://unsecure.com/abc.js"></script>
+    
+    <script nonce="randomKey">
+        console.log("My trusted code!")
+    </script>
+
+    <script>
+        console.log("My untrusted code!")
+    </script>
+</head>
+<body>
+    <h3>Page for CORS demo!</h3>
+    <img src="https://media.licdn.com/dms/image/D4D03AQFg4FEfy0JVvQ/profile-displayphoto-shrink_200_200/0/1695065360106?e=1710374400&v=beta&t=Xw1allTl89bCooIiHJy-ljAp1qEHg0DJWtFIzZMmVLQ" />
+</body>
+</html>
